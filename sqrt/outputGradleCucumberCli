@@ -1,0 +1,23 @@
+nguyens-mbp-2:sqrt amie$ gradle cucumberCli
+
+> Task :cucumberCli
+
+Scenario: Compute a value when both operands are positive # src/test/resources/features/sqrt.feature:6
+  Given I have an integer "3"                             # ser515.unittest.stepdefs.StepDefsSqrt1.i_have_an_integer(java.lang.String)
+  When I compute the square root                          # ser515.unittest.stepdefs.StepDefsSqrt1.i_compute_the_square_root()
+  Then I should return a positive number                  # ser515.unittest.stepdefs.StepDefsSqrt1.i_should_return_a_positive_number()
+
+1 Scenarios (1 passed)
+3 Steps (3 passed)
+0m0.130s
+
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2s
+5 actionable tasks: 5 executed
